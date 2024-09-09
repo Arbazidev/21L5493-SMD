@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="?android:attr/windowBackground"
+    tools:context=".questions">
+
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time: 00:00"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"
+        />
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 1:"
+        android:textSize="24sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="18dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/optionsGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <RadioButton
+            android:id="@+id/optionA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option A"
+            android:padding="8dp"
+            />
+
+        <RadioButton
+            android:id="@+id/optionB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option B"
+            android:padding="8dp"
+            />
+
+        <RadioButton
+            android:id="@+id/optionC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option C"
+            android:padding="8dp"
+            />
+
+        <RadioButton
+            android:id="@+id/optionD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Option D"
+            android:padding="8dp"
+            />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonPrevious"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Previous"
+            android:textAllCaps="false"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textAllCaps="false"
+            />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonRevealAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reveal Answer"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        />
+</LinearLayout>
